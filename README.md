@@ -24,8 +24,10 @@ I have created wireframe views of the three pages that the site will have.
 
 Mobile
 ![Home page mobile](assets/images/wireframe-mobile-home-sm.png "Mobile")
+---
 Tablet
 ![Home page Tablet](/assets/images/wireframe-tablet-home-sm.png "Tablet")
+---
 Laptop
 ![Home page Laptop](/assets/images/wireframe-laptop-home-sm.png "Laptop")
 
@@ -33,8 +35,10 @@ Laptop
 
 Mobile
 ![Projects page](/assets/images/wireframe-mobile-projects-sm.png "Mobile")
+---
 Tablet
 ![Projects page](/assets/images/wireframe-tablet-projects-sm.png "Tablet")
+---
 laptop
 ![Projects page](/assets/images/wireframe-laptop-projects-sm.png "Laptop")
 
@@ -42,7 +46,9 @@ laptop
 
 Mobile
 ![Contact page](/assets/images/wireframe-mobile-contact-sm.png "Mobile")
+---
 Tablet
 ![Contact page](/assets/images/wireframe-tablet-contact-sm.png "Tablet")
-Desktop
+---
+Laptop
 ![Projects page](/assets/images/wireframe-laptop-projects-sm.png "Laptop")
