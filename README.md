@@ -19,7 +19,19 @@ The primary goad is to create a website to display my abilities and strengths to
 
 ### Wireframe
 
-* Home page
-![Home page mobile](/assets/images/wireframe-mobile-home-sm.PNG "Mobile")
+#### Home page
+
+![Home page mobile](/assets/images/wireframe-mobile-home-sm.png"Mobile")
+![Home page Tablet](/assets/images/wireframe-tablet-home-sm.png"Tablet")
+![Home page Laptop](/assets/images/wireframe-laptop-home-sm.png"Laptop")
+
+#### Projects Page
+
+![Projects page](/assets/images/wireframe-mobile-projects-sm.png"Mobile")
+![Projects page](/assets/images/wireframe-tablet-projects-sm.png"Tablet")
+![Projects page](/assets/images/wireframe-laptop-projects-sm.png"Laptop")
+
+
+
 
 
