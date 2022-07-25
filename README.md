@@ -7,7 +7,7 @@
 The primary goad is to create a website to display my abilities and strengths to a prospective employer.
 
 #### User goals
-* To find out what skills i have
+* To find out what skills I have
 * What are my qualifications
 * Examples of my work
 * Am I suitable for a post they need to fill
@@ -19,9 +19,10 @@ The primary goad is to create a website to display my abilities and strengths to
 
 ### Wireframe
 
+I have created wireframe views of the three pages that the site will have.
+
 #### Home page
 
-<<<<<<< HEAD
 ![Home page mobile](/assets/images/wireframe-mobile-home-sm.png"Mobile")
 ![Home page Tablet](/assets/images/wireframe-tablet-home-sm.png"Tablet")
 ![Home page Laptop](/assets/images/wireframe-laptop-home-sm.png"Laptop")
@@ -32,10 +33,8 @@ The primary goad is to create a website to display my abilities and strengths to
 ![Projects page](/assets/images/wireframe-tablet-projects-sm.png"Tablet")
 ![Projects page](/assets/images/wireframe-laptop-projects-sm.png"Laptop")
 
+#### Contact Page
 
-
-=======
-![Home page mobile](/assets/images/wireframe-mobile-home-sm.png "Mobile")
->>>>>>> f9d4206569e3b4ef09525a9615cc429486c764df
-
-
+![Contact page](/assets/images/wireframe-mobile-contact-sm.png"Mobile")
+![Contact page](/assets/images/wireframe-tablet-contact-sm.png"Tablet")
+![Projects page](/assets/images/wireframe-laptop-projects-sm.png"Laptop")
