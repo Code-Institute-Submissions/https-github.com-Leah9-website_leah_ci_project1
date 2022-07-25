@@ -57,18 +57,38 @@ I have created wireframe views of the three pages that the site will have.
 ![Contact page](/assets/images/wireframe-tablet-contact-sm.png "Tablet")
 ---
 ##### Laptop
-![Projects page](/assets/images/wireframe-laptop-projects-sm.png "Laptop")
+![Projects page](/assets/images/wireframe-laptop-contact-sm.png "Laptop")
 ---
 
 ## Code
 
+### Languages used
+* HTML
+* CSS
+* JavaScript
 
+### Style overrides
+
+#### Navbar overrides to replace Bootstrap defaults
+.navbar {
+    /*background-color: rgb(162, 42, 164);*/
+}
+.navbar a {
+    color: rgb(162, 42, 164);
+}
+
+.nav-pills {
+	--bs-nav-pills-border-radius: 0.375rem;
+	--bs-nav-pills-link-active-color: #fff;
+	--bs-nav-pills-link-active-bg: rgb(162, 42, 164);
+}
 
 ## Credits
 
 ### Acknoledgements
 
 * Bootstrap
+* Bootstrap documentation
 
 ## Deployment
 
