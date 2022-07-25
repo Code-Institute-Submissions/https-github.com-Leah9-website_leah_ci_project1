@@ -20,6 +20,6 @@ The primary goad is to create a website to display my abilities and strengths to
 ### Wireframe
 
 * Home page
-![Home page mobile](/assets/images/wireframe-mobile-home-sm.PNG "Mobile")
+![Home page mobile](/assets/images/wireframe-mobile-home-sm.png "Mobile")
 
 
