@@ -21,6 +21,7 @@ The primary goad is to create a website to display my abilities and strengths to
 
 #### Home page
 
+<<<<<<< HEAD
 ![Home page mobile](/assets/images/wireframe-mobile-home-sm.png"Mobile")
 ![Home page Tablet](/assets/images/wireframe-tablet-home-sm.png"Tablet")
 ![Home page Laptop](/assets/images/wireframe-laptop-home-sm.png"Laptop")
@@ -33,5 +34,8 @@ The primary goad is to create a website to display my abilities and strengths to
 
 
 
+=======
+![Home page mobile](/assets/images/wireframe-mobile-home-sm.png "Mobile")
+>>>>>>> f9d4206569e3b4ef09525a9615cc429486c764df
 
 
