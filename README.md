@@ -18,7 +18,6 @@ The primary goad is to create a website to display my abilities and strengths to
 * Contact page to send a message and make contact with me. 
 
 ### Wireframe
-
 I have created wireframe views of the three pages that the site will have.
 
 #### Home page
