@@ -68,7 +68,7 @@
                         For this project I will use C as I have already written the code for obtaining the sensor
                         redings from the DHT22's and it would be boring if I did everything the easy way in Python.
                         The ESP32-DevKitC looks like this.</p>
-                    <img src="/images/ESP32.jpg" alt="ESP32">
+                    <img src="/assets//images/ESP32.jpg" alt="ESP32" class="img-fluid my-image">
                     <p>The specification can be found at <a
                             href="https://www.espressif.com/en/products/devkits/esp32-devkitc"
                             target="_blank">https://www.espressif.com/en/products/devkits/esp32-devkitc</a>. It is
@@ -116,7 +116,6 @@
 
                 <article class="px-4 py-4 my-box">
                     <h1>This Website</h1>
-                    <div class="w3-container">
                         <h5 class="w3-opacity"><b>My personal profile website.</b></h5>
                         <h6 class="w3-text-purple"><i class="fa fa-asterisk fa-fw w3-margin-right"
                                 aria-hidden="true"></i>HTML, PHP, CSS, GitHub, LAMP Stack</h6>
@@ -135,17 +134,91 @@
                 </article>
 
                 <article class="px-4 py-4 my-box">
-
+                    <h1>Screen Grab</h1>
+  <b>Tool to grab a user customisable area of the screen repeatedly and output a pdf document.</b>
+                      <h2> class="w3-text-purple"><i class="fa fa-asterisk fa-fw w3-margin-right" aria-hidden="true"></i>Python, Tkinter, GitHub, PyautoGUI, Ongoing</h2>
+                      <p>This is my first project on Github that has enticed others to join in and help. The collaboration has taught me a lot about branches, automated testing and working on a group project.</p>
+                      <p>The reason behind this project was accessing a training workbook online via a web browser. The web based interface was not very good and
+                        very poor compared to Acrobat Reader or Foxit.</p>
+                      <p>My project brief was to meet the following requirements.</p>
+                      <ul>
+                        <li>Extract documents from online sources where a download option was not available. Specifically Box.com</li>
+                        <li>Allow the user to select the area and number of itterations.</li>
+                        <li>Allow the user to select the next or forward key press or action.</li>
+                        <li>Export the completed images as a pdf for easy reading offline.</li>
+                      </ul>
+            
+                      <p>I decided to attemp this in Python as I am most comfortable with the language, It also has a lot of easy to use libraries that are well documented.
+                        After some research I decided to base my application around the following components.</p>
+                      <ul>
+                        <li>Python 3</li>
+                        <li>FPDF2</li>
+                        <li>Pyautogui</li>
+                        <li>Tkinter</li>
+                      </ul>
+            
+                      <p>The source code for the project is available on my GitHub <a target="_Blank" href="https://github.com/Leah9/screengrab">https://github.com/Leah9/screengrab</a></p>
+            
+                      <p>This is the user interface of my application. It is quite basic but does everything required in the project brief.</p>
+                      <p><img alt="Screen grab user interface" src="/assets//images/Screen_Grab_UI.PNG"></p>
+                      <p>The video below shows it in use capturing three pages from Box and combining them into a pdf.</p>
+                      <p><iframe class="lc_video" src="https://www.youtube.com/embed/xbGqFwnWAmw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315"></iframe></p>
+                      <p><a href="#top" class="fa fa-circle-arrow-up w3-text-purple no_underline fa-lg fa-bounce" aria-hidden="true"></a></p>
                 </article>
 
                 <article class="px-4 py-4 my-box">
-
+                    Temperature Monitor</h2>
+                   
+                      <h6 class="w3-text-purple"><i class="fa fa-asterisk fa-fw w3-margin-right" aria-hidden="true"></i>Sensors, Rpi, SQL, Grafana, Python, IOT</h6>
+                      <p>In this project I connect a DHT22 temperature and humidity sensor to a Raspberry pi, store the data in a database and display using Grafana.</p>
+                      <p>The DHT22 is a cheap, easy to use sensor available from a wide range of sources. More information and technical specifications can be found <a href="https://uk.farnell.com/dfrobot/sen0137/dht22-temp-humidity-sensor-arduino/dp/3517874" target="_Blank">here</a>.</p>
+                      <p>This is what it looks like.</p>
+                      <p><img alt="Console output of the script" src="/assets//images/dht22.png"></p>
+                      <p>The code to extract the readings from the sensor is only a few lines, shown below.</p>
+                      <pre><code>import Adafruit_DHT
+            DHT_SENSOR = Adafruit_DHT.DHT22
+            DHT_PIN = 17
+            def dht22():
+                humidity, temperature = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)
+                return round(temperature, 1), round(humidity, 1)</code></pre>
+            
+                      <p>Source code is available on GitHub <a href="https://github.com/Leah9/pi_temperature_mon">https://github.com/Leah9/pi_temperature_mon</a>.</p>
+                      <p>Console output looks like this.</p>
+                      <p><img alt="Console output of the script" src="/assets//images/temperature_output_console.png"></p>
+                      <p>Entries in the database look like this.</p>
+                      <p><img alt="Php my admin view" src="/assets//images/phpmyadmin.png"></p>
+                      <p>Once the data was stored in the database I decided the easiest way to display the results was by using Grafana. A log of the last two days data is shown in the image below.</p>
+                      <p><img alt="Console output of the script" src="/assets//images/grafana_output.png"></p>
+                      <p>I also created dashboards to view on my desktop and mobile.</p>
+                      <p><img alt="Desktop dashboard" src="/assets/images/Dashboard_Desktop.PNG"></p>
+                      <p><img alt="Mobile dashboard" src="/assets/images/Dashboard_Mobile.jpg" width="200px"></p>
+            
+            
+                      <p><a href="#top" class="fa fa-circle-arrow-up w3-text-purple no_underline fa-lg fa-bounce" aria-hidden="true"></a></p>
                 </article>
 
                 <article class="px-4 py-4 my-box">
-
+                    <h1>Battleships</h1>
+                    
+                      <h6 class="w3-text-purple"><i class="fa fa-asterisk fa-fw w3-margin-right" aria-hidden="true"></i>Codecademy, Python</h6>
+                      <p><img alt="Screenshot of terminal playing battleships" src="/assets/images/battleships_screenshot.png"></p>
+                      <p>This is my first project on Codecademy Computer Sciences pathway.</p>
+            
+                      <p>The task was to create a terminal based game or application in python, one of the ideas provided was for battleships and it looked interesting.
+                        The game randomly places both your ships and enemy ships in the play area.</p>
+                      <p>Each player takes it in turn to fire at the opponents ships by entering grid details. Hits or misses are displayed on the grids.
+                        When all ship sections of a team are destroyed the game is over and a winner declared.
+                      </p>
+                      <p>
+                        The source code can be found at this link <a target="_Blank" href="https://github.com/Leah9/battleships">https://github.com/Leah9/battleships</a> please give it a go and let me know if you found it fun or if you find an error.
+                      </p>
+                      <p>
+                        This project was more complex than I initially invisioned but it was satisfying to overcome some of the early issues and making a output function that was both functional and pretty.
+                        Looking forward to the next one :)</p>
+            
+                      <p><a href="#top" class="fa fa-circle-arrow-up w3-text-purple no_underline fa-lg fa-bounce" aria-hidden="true"></a></p>
                 </article>
-                
+
                 <article class="px-4 py-4 my-box">
 
                 </article>
