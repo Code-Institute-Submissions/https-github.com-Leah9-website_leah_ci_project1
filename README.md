@@ -73,13 +73,16 @@ I have created wireframe views of the three pages that the site will have.
 .navbar {
     /*background-color: rgb(162, 42, 164);*/
 }
+
 .navbar a {
     color: rgb(162, 42, 164);
 }
 
 .nav-pills {
 	--bs-nav-pills-border-radius: 0.375rem;
+
 	--bs-nav-pills-link-active-color: #fff;
+    
 	--bs-nav-pills-link-active-bg: rgb(162, 42, 164);
 }
 
