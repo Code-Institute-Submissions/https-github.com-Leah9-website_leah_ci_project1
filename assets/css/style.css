@@ -24,7 +24,21 @@ h1, h2, h3, h4, h5 {
     
 }
 
+.my-box {
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 8px var(--my-purple);
+    border-color: black;
+    border-style:hidden;
+    margin-bottom: 2em;
+}
 
+.my-image {
+    border-radius: 0.5em;
+    border-color: var(--my-purple);
+    border-style: solid;
+    border-width: 0.1em;
+    box-shadow: 1px 1px 3px var(--my-purple);
+}
 .progress-bar {
     background-color: var(--my-purple);
 }
@@ -33,3 +47,5 @@ h1, h2, h3, h4, h5 {
     background-color: var(--my-purple);
     padding: 1em;
 }
+
+
