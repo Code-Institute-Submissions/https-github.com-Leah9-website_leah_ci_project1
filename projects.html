@@ -14,9 +14,10 @@
 </head>
 
 <body>
-    <header class="container">
+    <!-- Header-->
+    <header>
         <nav class="navbar justify-content-center nav-pills">
-            <ul class="nav">
+            <ul class="nav px-4 py-4">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
@@ -29,6 +30,7 @@
             </ul>
         </nav>
     </header>
+    <!-- End Header-->
     <!-- Main content container-->
     <section class="container py-4">
         <div class="row d-flex">
@@ -59,15 +61,15 @@
                 <article class="px-4 py-4 my-box">
                     <h1>This Website</h1>
                     <h2>My personal profile website.</h2>
-                    <h3>HTML, PHP, CSS, GitHub, LAMP Stack</h3>
+                    <h3>HTML, PHP, CSS, GitHub, WAMP / LAMP Stack</h3>
 
-                    <p>This site is based on a template by W3Schools and altered to fit my needs.</p>
+                    <p>This site was created to replace my previous one and to practice skills that I had learned on my fromtend development course.</p>
                     <p>The site was created in Visual Studio Code in HTML, PHP and CSS. It is hosted on cpanel / WHM
                         reseller account.</p>
-                    <p>Local development and testing is done using WAMP server. Once i am happy with any changes
+                    <p>Local development and testing is done using WAMP server. Once I am happy with any changes
                         they are pushed to a private GitHub repo then deployed automatically using a GitHub workflow
                         shown below.</p>
-                    <img src="/assets/images/Workflow_Github.PNG" alt="GitHub Workflow">
+                    <img src="/assets/images/Workflow_Github.PNG" alt="GitHub Workflow" class="img-fluid my-image">
                     <p>In the future I plan to add live dashboards of my IOT sensors</p>
                     <p><a href="#top" class="fa fa-circle-arrow-up fa-lg fa-bounce my-anchor-link"
                         aria-hidden="true"></a></a></p>
@@ -170,7 +172,7 @@
 
                     <p>This is the user interface of my application. It is quite basic but does everything required in
                         the project brief.</p>
-                    <p><img alt="Screen grab user interface" src="/assets//images/Screen_Grab_UI.PNG"></p>
+                    <p><img alt="Screen grab user interface" src="/assets//images/Screen_Grab_UI.PNG" class="img-fluid my-image"></p>
                     <p>The video below shows it in use capturing three pages from Box and combining them into a pdf.</p>
                     <p><iframe class="lc_video" src="https://www.youtube.com/embed/xbGqFwnWAmw"
                             title="YouTube video player"
@@ -181,10 +183,9 @@
                 </article>
 
                 <article class="px-4 py-4 my-box">
-                    Temperature Monitor</h2>
+                    <h1>Temperature Monitor</h1>
 
-                    <h6 class="w3-text-purple"><i class="fa fa-asterisk fa-fw w3-margin-right"
-                            aria-hidden="true"></i>Sensors, Rpi, SQL, Grafana, Python, IOT</h6>
+                    <h2>Sensors, Rpi, SQL, Grafana, Python, IOT</h2>
                     <p>In this project I connect a DHT22 temperature and humidity sensor to a Raspberry pi, store the
                         data in a database and display using Grafana.</p>
                     <p>The DHT22 is a cheap, easy to use sensor available from a wide range of sources. More information
@@ -192,7 +193,7 @@
                             href="https://uk.farnell.com/dfrobot/sen0137/dht22-temp-humidity-sensor-arduino/dp/3517874"
                             target="_Blank">here</a>.</p>
                     <p>This is what it looks like.</p>
-                    <p><img alt="Console output of the script" src="/assets//images/dht22.png"></p>
+                    <p><img alt="Console output of the script" src="/assets//images/dht22.png" class="img-fluid my-image"></p>
                     <p>The code to extract the readings from the sensor is only a few lines, shown below.</p>
                     <pre><code>import Adafruit_DHT
             DHT_SENSOR = Adafruit_DHT.DHT22
@@ -205,15 +206,15 @@
                             href="https://github.com/Leah9/pi_temperature_mon">https://github.com/Leah9/pi_temperature_mon</a>.
                     </p>
                     <p>Console output looks like this.</p>
-                    <p><img alt="Console output of the script" src="/assets//images/temperature_output_console.png"></p>
+                    <p><img alt="Console output of the script" src="/assets//images/temperature_output_console.png" class="img-fluid my-image"></p>
                     <p>Entries in the database look like this.</p>
-                    <p><img alt="Php my admin view" src="/assets//images/phpmyadmin.png"></p>
+                    <p><img alt="Php my admin view" src="/assets//images/phpmyadmin.png"class="img-fluid my-image"></p>
                     <p>Once the data was stored in the database I decided the easiest way to display the results was by
                         using Grafana. A log of the last two days data is shown in the image below.</p>
-                    <p><img alt="Console output of the script" src="/assets//images/grafana_output.png"></p>
+                    <p><img alt="Console output of the script" src="/assets//images/grafana_output.png" class="img-fluid my-image"></p>
                     <p>I also created dashboards to view on my desktop and mobile.</p>
-                    <p><img alt="Desktop dashboard" src="/assets/images/Dashboard_Desktop.PNG"></p>
-                    <p><img alt="Mobile dashboard" src="/assets/images/Dashboard_Mobile.jpg" width="200px"></p>
+                    <p><img alt="Desktop dashboard" src="/assets/images/Dashboard_Desktop.PNG" class="img-fluid my-image"></p>
+                    <p><img alt="Mobile dashboard" src="/assets/images/Dashboard_Mobile.jpg" class="img-fluid my-image"></p>
 
 
                     <p><a href="#top" class="fa fa-circle-arrow-up fa-lg fa-bounce my-anchor-link"
@@ -226,7 +227,7 @@
                     <h6 class="w3-text-purple"><i class="fa fa-asterisk fa-fw w3-margin-right"
                             aria-hidden="true"></i>Codecademy, Python</h6>
                     <p><img alt="Screenshot of terminal playing battleships"
-                            src="/assets/images/battleships_screenshot.png"></p>
+                            src="/assets/images/battleships_screenshot.png" width="200px" class="img-fluid my-image"></p>
                     <p>This is my first project on Codecademy Computer Sciences pathway.</p>
 
                     <p>The task was to create a terminal based game or application in python, one of the ideas provided
