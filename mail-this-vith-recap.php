@@ -1,5 +1,5 @@
 <?php
-                  
+                  // All reCAPTCHA code is from their documentation edited to work on my site
     
                   $to = $_POST["info@leah.wales"];
                   $subject = $_POST["Contact mail"];

@@ -87,11 +87,15 @@ I have created wireframe views of the three pages that the site will have.
 }
 
 ## Credits
+All images are my own.
+Music in the YouTube video is supplied as part of the user agreement to improve UX.
 
 ### Acknoledgements
 
 * Bootstrap
 * Bootstrap documentation
+* Google reCAPCHA
+* Google reCAPCHA documentation
 
 ## Deployment
 

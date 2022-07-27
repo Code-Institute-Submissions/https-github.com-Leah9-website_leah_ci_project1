@@ -54,9 +54,20 @@ h1, h2, h3, h4, h5 {
     
 }
 
+.my-anchor-link {
+    text-decoration: none;
+    color: var(--my-purple);
+}
+
 .footer {
     background-color: var(--my-purple);
     padding: 1em;
+    color: azure;
+}
+
+.footer a {
+    color: azure;
+    text-decoration: none;
 }
 
 
