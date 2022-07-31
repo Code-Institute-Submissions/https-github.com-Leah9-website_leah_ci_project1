@@ -1,6 +1,20 @@
 <?php
                   // All reCAPTCHA code is from their documentation edited to work on my site
     
+
+                  function url_get_contents($Url)
+                  {
+                    if (!function_exists('curl_init')) {
+                      die('CURL is not installed!');
+                    }
+                    $ch = curl_init();
+                    curl_setopt($ch, CURLOPT_URL, $Url);
+                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                    $output = curl_exec($ch);
+                    curl_close($ch);
+                    return $output;
+                  }
+                  
                   $to = $_POST["info@leah.wales"];
                   $subject = $_POST["Contact mail"];
                   $from = $_POST["email"];
@@ -43,4 +57,3 @@
                   } else {
                     echo '<script>alert("Error in Google reCAPTACHA")</script>';
                   }
-                ?>
