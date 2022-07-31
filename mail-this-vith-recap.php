@@ -1,6 +1,6 @@
 <?php
                   // All reCAPTCHA code is from their documentation edited to work on my site
-    
+                  include 'contact.html';
 
                   function url_get_contents($Url)
                   {
@@ -42,7 +42,7 @@
                   // Making request to verify captcha
                   $response = file_get_contents($url); //file_get_contents is disabled on the server alternate function used.
                   $response = url_get_contents($url);
-                  echo "$response";
+                  //echo "$response";
     
                   // Response return by google is in
                   // JSON format, so we have to parse
@@ -53,7 +53,7 @@
                   if ($response->success == true) {
                     echo '<script>alert("Google reCAPTACHA verified, email sent!")</script>';
                     mail($to, $subject, $msg, $headers);
-                    echo "Email successfully sent..";
+                    //echo "Email successfully sent..";
                   } else {
                     echo '<script>alert("Error in Google reCAPTACHA")</script>';
                   }
