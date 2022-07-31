@@ -15,8 +15,8 @@
                     return $output;
                   }
                   
-                  $to = $_POST["info@leah.wales"];
-                  $subject = $_POST["Contact mail"];
+                  $to = "info@leah.wales";
+                  $subject = "Contact mail";
                   $from = $_POST["email"];
                   $msg = $_POST["msg"];
                   $headers = "From: $from";
@@ -53,7 +53,7 @@
                   if ($response->success == true) {
                     echo '<script>alert("Google reCAPTACHA verified, email sent!")</script>';
                     mail($to, $subject, $msg, $headers);
-                    echo "Email successfully sent.";
+                    echo "Email successfully sent..";
                   } else {
                     echo '<script>alert("Error in Google reCAPTACHA")</script>';
                   }
