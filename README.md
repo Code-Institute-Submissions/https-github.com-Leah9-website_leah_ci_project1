@@ -70,6 +70,7 @@ I have created wireframe views of the three pages that the site will have.
 ### Style overrides
 
 #### Navbar overrides to replace Bootstrap defaults
+``` css
 .navbar {
     /*background-color: rgb(162, 42, 164);*/
 }
@@ -85,7 +86,7 @@ I have created wireframe views of the three pages that the site will have.
     
 	--bs-nav-pills-link-active-bg: rgb(162, 42, 164);
 }
-
+```
 ## Credits
 All images are my own.
 Music in the YouTube video is supplied as part of the user agreement to improve UX.
@@ -98,6 +99,40 @@ Music in the YouTube video is supplied as part of the user agreement to improve 
 * Google reCAPCHA documentation
 
 ## Deployment
+
+To deploy I will use a GitHub action script from SamKirkland/FTP-Deploy-Action@4.3.0
+
+* Created a secret in the repository FTP_PASSWORD
+* Edit the script to point to my web host FTP server
+* Test run carried out
+* Check all files are uploaded
+
+The script will run every time I push to master which means I can use my local environment for most of the testing while having an automated deployment system that is very simple.
+
+Script code :
+``` yml
+on: push
+name: Deploy website on push
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v2
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ftp.hostmysite.wales
+        username: githubftp@leah.wales
+        password: ${{ secrets.ftp_password }}
+        protocol: ftps
+```
+![Github action](/assets/images/workflow_action_deploy.jpg "Github action deploy")
+
+![Site live](/assets/images/website_live.jpg "Website Live") 
+
 
 ## Testing
 
