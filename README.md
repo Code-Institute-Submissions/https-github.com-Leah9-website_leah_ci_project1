@@ -2,7 +2,6 @@
 ## Code Institute Milestone Project 1
 
 ## UX
-
 ### Project Goal
 The primary goad is to create a website to display my abilities and strengths to a prospective employer.
 
@@ -21,10 +20,14 @@ The primary goad is to create a website to display my abilities and strengths to
 
 ## User stories
 
+* As a recruiter I am looking for someone to fill various roles.
+* As an employer I am searching for a new developer to work on a project.
+
 ## Design choices
 
+My design choices are to make a professional looking site with a modern clean look. Simple navigation and easy access to required information on a range of devices.
 ## Wireframe
-I have created wireframe views of the three pages that the site will have.
+I have created wireframe views of the three pages that the site will have based on my required sections.
 
 ### Home page
 
@@ -66,9 +69,9 @@ I have created wireframe views of the three pages that the site will have.
 ### Languages used
 * HTML
 * CSS
-* JavaScript
+* php for the contact page reCAPTCHA code and email
 
-### Style overrides
+### My Styles and Bootstrap Overrides
 
 #### Navbar overrides to replace Bootstrap defaults
 ``` css
@@ -88,6 +91,8 @@ I have created wireframe views of the three pages that the site will have.
 	--bs-nav-pills-link-active-bg: rgb(162, 42, 164);
 }
 ```
+All my style rules are contained in the styles.css file.
+
 ## Credits
 All images are my own.
 Music in the YouTube video is supplied as part of the user agreement to improve UX.
@@ -139,23 +144,9 @@ jobs:
 * Set up a web host environment using LAMP / WAMP
 * Copy all project files and folders into a virtual host location
 * Enter the virtual host address in a web browser.
-* reCAPTCH will not work as it is associated with the domain name. 
+* reCAPTCH will not work locally as it is associated with the domain name. 
 
 ## Testing
-
-Expected
-Site is expected to do X when user does y
-
-Testing
-Tested the site by doint y
-
-Result
-The site did not produce the required result
-or
-The site worked as expected and did y
-
-Fix
-I did z to code because J
 
 https://developer.chrome.com/docs/lighthouse/overview/
 
