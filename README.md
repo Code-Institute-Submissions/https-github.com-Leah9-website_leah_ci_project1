@@ -22,12 +22,13 @@ The primary goad is to create a website to display my abilities and strengths to
 
 * As a recruiter I am looking for someone to fill various roles.
 * As an employer I am searching for a new developer to work on a project.
+* As a business owner I am checking previous experience of a potential employee after having received the website address on a CV.
 
 ## Design choices
 
 My design choices are to make a professional looking site with a modern clean look. Simple navigation and easy access to required information on a range of devices.
 ## Wireframe
-I have created wireframe views of the three pages that the site will have based on my required sections.
+I have created wireframe views of the three pages that the site will have based on my required sections. I used wireframe.cc to complete this task.
 
 ### Home page
 
