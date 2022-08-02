@@ -54,12 +54,16 @@ a:hover {
 }
 
 .my-image {
-    border-radius: 50%;
+    border-radius: 0.5rem;
     border-color: var(--my-primary-col);
     border-style: solid;
     border-width: 0.1rem;
     box-shadow: 1px 1px 3px var(--my-primary-col);
     margin-bottom: 0.5rem;
+}
+
+#portrait {
+    border-radius: 50%;
 }
 .progress-bar {
     background-color: var(--my-primary-col);
