@@ -3,16 +3,17 @@
 
 ## UX
 
-## Project Goal
+### Project Goal
 The primary goad is to create a website to display my abilities and strengths to a prospective employer.
 
-### User goals
+
+#### User goals
 * To find out what skills I have
 * What are my qualifications
 * Examples of my work
 * Am I suitable for a post they need to fill
 * Make contact with me
-### Required sections
+#### Required sections
 * Home page containing brief overview and what area of emploment I am looking for.
 * Projects page containing details of projects that I have completed.
 * Contact page to send a message and make contact with me. 
@@ -100,7 +101,7 @@ Music in the YouTube video is supplied as part of the user agreement to improve 
 
 ## Deployment
 
-To deploy I will use a GitHub action script from SamKirkland/FTP-Deploy-Action@4.3.0
+To deploy I use a GitHub action script from SamKirkland/FTP-Deploy-Action@4.3.0
 
 * Created a secret in the repository FTP_PASSWORD
 * Edit the script to point to my web host FTP server
@@ -133,6 +134,12 @@ jobs:
 
 ![Site live](/assets/images/website_live.jpg "Website Live") 
 
+### How to run this project locally
+
+* Set up a web host environment using LAMP / WAMP
+* Copy all project files and folders into a virtual host location
+* Enter the virtual host address in a web browser.
+* reCAPTCH will not work as it is associated with the domain name. 
 
 ## Testing
 
@@ -152,4 +159,54 @@ I did z to code because J
 
 https://developer.chrome.com/docs/lighthouse/overview/
 
-## Bugs discovered
+All pages pass CSS and HTML validation
+
+All links and navigation work correctly
+
+Site works on mobile, tablet and laptop / desktop sized screens as expected.
+
+Accessibility checks for screen readers, contrast and navigation.
+
+### Bugs discovered
+
+
+# Project Requirements Check From CI Project Brief
+
+## Main Technologies
+
+* Required: HTML, CSS
+
+* Optional: Bootstrap and/or other CSS libraries/frameworks.
+
+## Mandatory Requirements
+
+A project violating any of these requirements will FAIL
+
+* Static front end project: Write custom HTML5 and CSS3 code to create a website of at least 3 pages, or (if using a single scrolling page), at least 3 separate page areas.
+* Information Architecture: Incorporate a main navigation menu and structured layout (you might want to use Bootstrap to accomplish this).
+* Documentation: Write a README.md file for your project that explains what the project does and the value that it provides to its users.
+* Version Control: Use Git & GitHub for version control.
+* Attribution: Maintain clear separation between code written by you and code from external sources (e.g. libraries or tutorials). Attribute any code from external sources to its source via comments above the code and (for larger dependencies) in the README.
+* Deployment: Deploy the final version of your code to a hosting platform such as GitHub Pages.
+
+## Project Example Idea 3 
+ External user’s goal:
+
+* The site's users are recruiters considering to hire the applicant.
+
+Site owner's goal:
+
+* Present self in best light and get hired.
+
+Potential features to include:
+
+* Tell about educational history and work experience.
+
+* Tell about skills and any other relevant competencies and interests.
+
+* Provide basic personal information and contact information for recruiters.
+
+Advanced potential feature (nice-to-have)
+
+* Showcase portfolio of projects so far (in-lieu of links to real projects that you'd build later, feel free to include links to fake projects or random sites on the internet at this stage)
+
