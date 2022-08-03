@@ -3,7 +3,7 @@
 
 ## UX
 ### Project Goal
-The primary goad is to create a website to display my abilities and strengths to a prospective employer.
+The primary goad is to create a website to display my abilities and strengths to a prospective employer, get hired.
 
 
 #### User goals
@@ -76,9 +76,6 @@ I have created wireframe views of the three pages that the site will have based 
 
 #### Navbar overrides to replace Bootstrap defaults
 ``` css
-.navbar {
-    /*background-color: rgb(162, 42, 164);*/
-}
 
 .navbar a {
     color: rgb(162, 42, 164);
@@ -92,13 +89,13 @@ I have created wireframe views of the three pages that the site will have based 
 	--bs-nav-pills-link-active-bg: rgb(162, 42, 164);
 }
 ```
-All my style rules are contained in the styles.css file.
+All my style rules are contained in the style.css file.
 
 ## Credits
 All images are my own.
 Music in the YouTube video is supplied as part of the user agreement to improve UX.
 
-### Acknoledgements
+### Acknoledgements - Attribution
 
 * Bootstrap
 * Bootstrap documentation

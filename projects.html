@@ -116,7 +116,7 @@
                         <li>ESP32 with DHT22 sensors</li>
                         <li>Program to read sensor data and publish MQTT messages</li>
                     </ul>
-                    <p>The flow of data for the complete system is a as follows</p>
+                    <p>The flow of data for the complete system is a as follows :</p>
                     <ul>
                         <li>ESP32 reads data from DHT2 sensors</li>
                         <li>ESP32 connects to WiFi and transmitts MQTT messages containing temperature and humidity data
@@ -181,8 +181,7 @@
                             class="img-fluid my-image"></p>
                     <p>The video below shows it in use capturing three pages from Box and combining them into a pdf.</p>
                     <div class="embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xbGqFwnWAmw"
-                            title="YouTube video player"></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xbGqFwnWAmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <a href="#top" class="fa fa-circle-arrow-up fa-lg fa-bounce my-anchor-link"
                         aria-hidden="true"></a></a></p>
@@ -203,11 +202,11 @@
                             class="img-fluid my-image"></p>
                     <p>The code to extract the readings from the sensor is only a few lines, shown below.</p>
                     <pre><code>import Adafruit_DHT
-            DHT_SENSOR = Adafruit_DHT.DHT22
-            DHT_PIN = 17
-            def dht22():
-                humidity, temperature = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)
-                return round(temperature, 1), round(humidity, 1)</code></pre>
+DHT_SENSOR = Adafruit_DHT.DHT22
+DHT_PIN = 17
+def dht22():
+    humidity, temperature = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)
+    return round(temperature, 1), round(humidity, 1)</code></pre>
 
                     <p>Source code is available on GitHub <a
                             href="https://github.com/Leah9/pi_temperature_mon">https://github.com/Leah9/pi_temperature_mon</a>.

@@ -85,6 +85,13 @@ a:hover {
     color: var(--my-primary-col);
 }
 
+pre code {
+    background-color: black;
+    border-radius: 0.5rem;
+    color: azure ;
+    display: inline-block ;
+    padding: 1rem;
+}
 .footer {
     background-color: var(--my-primary-col);
     padding: 1rem;
