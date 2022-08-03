@@ -12,7 +12,10 @@
         media="print" onload="this.media='all'">
 
     <script async src="https://kit.fontawesome.com/0067dce3fb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.media='all'">
+    <!--Script By https://github.com/justinribeiro/lite-youtube/blob/main/README.md recommended by lighthouse-->
+    <script async type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!--media="print" onload="this.media='all'"-->
 </head>
 
 <body>
@@ -181,12 +184,17 @@
                     <p><img alt="Screen grab user interface" src="/assets//images/Screen_Grab_UI.PNG"
                             class="img-fluid my-image"></p>
                     <p>The video below shows it in use capturing three pages from Box and combining them into a pdf.</p>
-                    <iframe width="400" height="300" src="https://www.youtube.com/embed/xbGqFwnWAmw" title="ScreenGrab"
+                    <!--<iframe width="400" height="300" src="https://www.youtube.com/embed/xbGqFwnWAmw" title="ScreenGrab"
                         style="border: 0;"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
+                    -->
+                    <lite-youtube videoid="xbGqFwnWAmw"></lite-youtube>
+
                     <a href="#top" class="fa fa-circle-arrow-up fa-lg fa-bounce my-anchor-link" aria-hidden="true"></a>
                 </article>
+
+
 
                 <article class="px-4 py-4 my-box" id="temperature">
                     <h2>Temperature Monitor</h2>
@@ -226,8 +234,6 @@ def dht22():
                             class="img-fluid my-image"></p>
                     <p><img alt="Mobile dashboard" src="/assets/images/Dashboard_Mobile.jpg" class="img-fluid my-image">
                     </p>
-
-
                     <p><a href="#top" class="fa fa-circle-arrow-up fa-lg fa-bounce my-anchor-link"
                             aria-hidden="true"></a></p>
                 </article>
