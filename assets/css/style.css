@@ -98,6 +98,10 @@ pre code {
     color: azure;
 }
 
+footer p {
+    font-size: 0.8rem;
+}
+
 .footer a {
     color: azure;
     text-decoration: none;
