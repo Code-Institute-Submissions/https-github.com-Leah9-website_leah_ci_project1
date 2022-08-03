@@ -4,9 +4,6 @@
 --my-tertiary-col: #642aa3;
 }
 
-.navbar {
-    /*background-color: rgb(162, 42, 164);*/
-}
 .navbar a {
     color: var(--my-primary-col);
 }
@@ -35,7 +32,7 @@ a:hover {
 }
 
 #name-cursive {
-    font-family: brush script mt;
+    font-family: "brush script mt";
     font-size: 3em;
     color: var(--my-primary-col);
 }
