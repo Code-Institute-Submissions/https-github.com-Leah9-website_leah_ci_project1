@@ -37,6 +37,7 @@ a:hover {
 #name-cursive {
     font-family: brush script mt;
     font-size: 3em;
+    color: var(--my-primary-col);
 }
 
 .progress-lables{

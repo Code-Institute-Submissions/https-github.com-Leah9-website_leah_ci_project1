@@ -150,6 +150,11 @@ https://developer.chrome.com/docs/lighthouse/overview/
 
 All pages pass CSS and HTML validation
 
+Fixed :
+Error: Character reference was not terminated by a semicolon.
+At line 135, column 25
+p>Website &#169 Leah C 2022</p
+
 All links and navigation work correctly
 
 Site works on mobile, tablet and laptop / desktop sized screens as expected.
