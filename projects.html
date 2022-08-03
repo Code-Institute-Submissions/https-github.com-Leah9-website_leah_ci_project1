@@ -8,9 +8,11 @@
     <meta name="description" content="Professional profile site of Leah C">
     <title>Leah Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/0067dce3fb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/assets/css/style.css">
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"
+        media="print" onload="this.media='all'">
+
+    <script async src="https://kit.fontawesome.com/0067dce3fb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.media='all'">
 </head>
 
 <body>
@@ -38,8 +40,8 @@
             <!-- Main content-->
             <div class="col-md-12">
                 <article class="px-4 py-4 my-box" id="top">
-                    <h2>My projects</h2>
-                    <h3>Introduction</h3>
+                    <h1>My projects</h1>
+                    <h2>Introduction</h2>
 
                     <p>These are some of the more interesting projects that I have completed in the last few years.
                         Older ones I have left online here leah9.blogspot.com.
@@ -57,13 +59,12 @@
                             MySql database.</li>
                         <li><a href="#battleships">Battleships </a> - Basic Battleships game in Python - terminal.</li>
                     </ul>
-                    </p>
 
 
                 </article>
 
                 <article class="px-4 py-4 my-box" id="this-website">
-                    <h1>This Website</h1>
+                
                     <h2>My personal profile website.</h2>
                     <h3>HTML, PHP, CSS, GitHub, WAMP / LAMP Stack</h3>
 
@@ -77,14 +78,14 @@
                     <img src="/assets/images/Workflow_Github.PNG" alt="GitHub Workflow" class="img-fluid my-image">
                     <p>In the future I plan to add live dashboards of my IOT sensors</p>
                     <p><a href="#top" class="fa fa-circle-arrow-up fa-lg fa-bounce my-anchor-link"
-                            aria-hidden="true"></a></a></p>
+                            aria-hidden="true"></a></p>
 
                 </article>
 
                 <article class="px-4 py-4 my-box" id="mqtt">
-                    <h1>MQTT Temperature Monitor Upgrade</h1>
-                    <h2>IOT, MQTT, Python, ESP32
-                        Devkit, C</h2>
+                    <h2>MQTT Temperature Monitor Upgrade</h2>
+                    <h3>IOT, MQTT, Python, ESP32
+                        Devkit, C</h3>
 
                     <p>I have recently researched MQTT / MQ Telemetry Transport a very lightweight messaging protocol
                         designed for IOT / Internet of Things.
@@ -144,9 +145,9 @@
 
 
                 <article class="px-4 py-4 my-box" id="screen-grab">
-                    <h1>Screen Grab</h1>
+                    <h2>Screen Grab</h2>
 
-                    <h2>Python, Tkinter, GitHub, PyautoGUI, Ongoing</h2>
+                    <h3>Python, Tkinter, GitHub, PyautoGUI, Ongoing</h3>
                     <h3>Tool to grab a user customisable area of the screen repeatedly and output a pdf document.</h3>
                     <p>This is my first project on Github that has enticed others to join in and help. The collaboration
                         has taught me a lot about branches, automated testing and working on a group project.</p>
@@ -180,15 +181,18 @@
                     <p><img alt="Screen grab user interface" src="/assets//images/Screen_Grab_UI.PNG"
                             class="img-fluid my-image"></p>
                     <p>The video below shows it in use capturing three pages from Box and combining them into a pdf.</p>
-                    <iframe width="400" height="300" src="https://www.youtube.com/embed/xbGqFwnWAmw" title="ScreenGrab" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/xbGqFwnWAmw" title="ScreenGrab"
+                        style="border: 0;"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                     <a href="#top" class="fa fa-circle-arrow-up fa-lg fa-bounce my-anchor-link"
-                        aria-hidden="true"></a></a></p>
+                        aria-hidden="true"></a>
                 </article>
 
                 <article class="px-4 py-4 my-box" id="temperature">
-                    <h1>Temperature Monitor</h1>
+                    <h2>Temperature Monitor</h2>
 
-                    <h2>Sensors, Rpi, SQL, Grafana, Python, IOT</h2>
+                    <h3>Sensors, Rpi, SQL, Grafana, Python, IOT</h3>
                     <p>In this project I connect a DHT22 temperature and humidity sensor to a Raspberry pi, store the
                         data in a database and display using Grafana.</p>
                     <p>The DHT22 is a cheap, easy to use sensor available from a wide range of sources. More information
@@ -230,9 +234,9 @@ def dht22():
                 </article>
 
                 <article class="px-4 py-4 my-box" id="battleships">
-                    <h1>Battleships</h1>
+                    <h2>Battleships</h2>
 
-                    <h2>Codecademy, Python</h2>
+                    <h3>Codecademy, Python</h3>
                     <p><img alt="Screenshot of terminal playing battleships"
                             src="/assets/images/battleships_screenshot.png" class="img-fluid my-image"></p>
                     <p>This is my first project on Codecademy Computer Sciences pathway.</p>
@@ -268,7 +272,7 @@ def dht22():
 
             </div>
         </div>
-        
+
 
     </section>
     <!-- End main content container-->
