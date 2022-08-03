@@ -102,6 +102,7 @@ Music in the YouTube video is supplied as part of the user agreement to improve 
 * Google reCAPCHA
 * Google reCAPCHA documentation
 * CSS async load by https://www.filamentgroup.com/lab/load-css-simpler/
+* Script By https://github.com/justinribeiro/lite-youtube/blob/main/README.md faster embed you tube video.
 
 ## Deployment
 
@@ -186,7 +187,7 @@ The best practice score has gone from 83 to 92 as the web server has a working S
 Unfortunately the performance score has gone from 97 to 85 as my web host is not as fast as my local machine and my internet is quite slow. I will try to improve it.
 
 
-To improve the performance i added the async attribute to the Font Awesome script load as it was blocking the rest of the page from loading.
+To improve the performance I added the async attribute to the Font Awesome script load as it was blocking the rest of the page from loading.
 
 I then found an article explaining how to do a similar thins with the css. https://www.filamentgroup.com/lab/load-css-simpler/ 
 
@@ -195,10 +196,27 @@ I added
 ```html
 media="print" onload="this.media='all'"
 ```
-to the css link html. This reduced the blocking but increased the layoutshift on load but alltogether it is an acceptable improvement.
+to the css link html. This reduced the blocking but increased the layoutshift by an unacceptable amount. Removed code.
 
+The Projects page score was quite bad due to the embedded you tube script. I found an alternative way to load the video that is very common and has over 75M hits on jsdeliver a month 1
 
-All pages pass CSS and HTML validation
+![Project page score](/assets/images/lighthouse-projects.JPG "projects page score")
+
+``` html
+<!--Script By https://github.com/justinribeiro/lite-youtube/blob/main/README.md recommended by lighthouse-->
+    <script async type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.js"></script>
+
+                        <!--<iframe width="400" height="300" src="https://www.youtube.com/embed/xbGqFwnWAmw" title="ScreenGrab"
+                        style="border: 0;"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    -->
+                    <lite-youtube videoid="xbGqFwnWAmw"></lite-youtube>
+```
+
+![Project page score](/assets/images/lighthouse-projects-youtube-script.JPG "projects page score")
+
+All pages pass CSS and HTML validation ---- NO
 
 Fixed :
 Error: Character reference was not terminated by a semicolon.
