@@ -101,6 +101,7 @@ Music in the YouTube video is supplied as part of the user agreement to improve 
 * Bootstrap documentation
 * Google reCAPCHA
 * Google reCAPCHA documentation
+* CSS async load by https://www.filamentgroup.com/lab/load-css-simpler/
 
 ## Deployment
 
@@ -146,7 +147,56 @@ jobs:
 
 ## Testing
 
+The first stage is checking that the site displays as expected on mobile, tablet and laptop / desktop sized screens. To do this i have used Google Chrome and lighthouse as shown below.
+
 https://developer.chrome.com/docs/lighthouse/overview/
+
+Mobile:
+
+
+![Mobile test with scores](/assets/images/Lighthouse-mobile.JPG "Mobile test with scores")
+
+
+Tablet:
+
+
+![Tablet view](/assets/images/lighthouse-tablet.JPG "Tablet view")
+
+
+Desktop:
+
+
+![Desktop view](/assets/images/desktop.JPG "Desktop view")
+
+
+The next task is to try and improve the scores that lighthouse has given the site. There asre different scores for each device size so I try to get the best balance.
+
+
+Before edits on local development machine :
+
+![Scores](/assets/images/lighthouse-scores.JPG "Scores")
+
+
+Before edits on web host :
+
+![Scores](/assets/images/lighthouse-web.JPG "Scores")
+
+The best practice score has gone from 83 to 92 as the web server has a working SSL certificate and the connection is secure.
+
+Unfortunately the performance score has gone from 97 to 85 as my web host is not as fast as my local machine and my internet is quite slow. I will try to improve it.
+
+
+To improve the performance i added the async attribute to the Font Awesome script load as it was blocking the rest of the page from loading.
+
+I then found an article explaining how to do a similar thins with the css. https://www.filamentgroup.com/lab/load-css-simpler/ 
+
+
+I added 
+```html
+media="print" onload="this.media='all'"
+```
+to the css link html. This reduced the blocking but increased the layoutshift on load but alltogether it is an acceptable improvement.
+
 
 All pages pass CSS and HTML validation
 
@@ -156,8 +206,6 @@ At line 135, column 25
 p>Website &#169 Leah C 2022</p
 
 All links and navigation work correctly
-
-Site works on mobile, tablet and laptop / desktop sized screens as expected.
 
 Accessibility checks for screen readers, contrast and navigation.
 
