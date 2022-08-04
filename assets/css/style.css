@@ -1,3 +1,5 @@
+/* Variables for use throught the site*/
+
 :root {
     --my-primary-col: #a12aa3;
     --my-secondary-col: #a32a68;
@@ -5,6 +7,8 @@
     --bs-navbar-padding-x: 0;
     --bs-navbar-padding-y: 0.5rem;
 }
+
+/* Navigation */
 
 .navbar a {
     color: var(--my-primary-col);
@@ -38,6 +42,8 @@ a:hover {
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
 
+/* Left bar on home page*/
+
 #name-cursive {
     font-family: "brush script mt";
     font-size: 3em;
@@ -48,6 +54,16 @@ a:hover {
     padding-top: 5px;
     margin-bottom: 0%;
 }
+
+#portrait {
+    border-radius: 50%;
+}
+
+.progress-bar {
+    background-color: var(--my-primary-col);
+}
+
+/* Content styling boxes, images code etc */
 
 .my-box {
     border-radius: 0.5rem;
@@ -66,24 +82,6 @@ a:hover {
     margin-bottom: 0.5rem;
 }
 
-#portrait {
-    border-radius: 50%;
-}
-
-.progress-bar {
-    background-color: var(--my-primary-col);
-}
-
-.my-form-item {
-    width: 100%;
-    height: 2.5rem;
-    border-color: lightgrey;
-    border-radius: 0.2rem;
-    border-width: 1px;
-    border-style: solid;
-    margin-bottom: 1rem;
-}
-
 .my-anchor-link {
     text-decoration: none;
     color: var(--my-primary-col);
@@ -96,6 +94,24 @@ pre code {
     display: inline-block;
     padding: 1rem;
 }
+
+/* Contact form specific */
+
+.my-form-item {
+    width: 100%;
+    height: 2.5rem;
+    border-color: lightgrey;
+    border-radius: 0.2rem;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 1rem;
+}
+
+.g-recaptcha {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
 
 .footer {
     background-color: var(--my-primary-col);
@@ -112,6 +128,3 @@ footer p {
     text-decoration: none;
 }
 
-.g-recaptcha {
-    margin-bottom: 1rem;
-}
