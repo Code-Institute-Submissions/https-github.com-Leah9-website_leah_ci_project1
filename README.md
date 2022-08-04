@@ -191,7 +191,7 @@ Unfortunately the performance score has gone from 97 to 85 as my web host is not
 
 To improve the performance I added the async attribute to the Font Awesome script load as it was blocking the rest of the page from loading.
 
-I then found an article explaining how to do a similar thins with the css. https://www.filamentgroup.com/lab/load-css-simpler/ 
+I then found an article explaining how to do a similar this with the css. https://www.filamentgroup.com/lab/load-css-simpler/ 
 
 
 I added 
@@ -218,7 +218,15 @@ The Projects page score was quite bad due to the embedded you tube script. I fou
 
 ![Project page score](/assets/images/lighthouse-projects-youtube-script.JPG "projects page score")
 
-All pages pass CSS and HTML validation ---- NO
+#### All pages pass CSS and HTML validation ---- NO
+### CSS
+
+Bootstrap does not pass CSS validation as it also caters for browser extensions and newer CSS features that are not supported or recognised by the validator. This is expected. My style.css passes most validators but also uses variables that some validators do not support.
+
+### HTML
+index.html passes
+projects.html has 2 warnings that do not impact the functionality or useablilty.
+contacts.html has 2 warnings that do not impact the functionality or useablilty.
 
 Fixed :
 Error: Character reference was not terminated by a semicolon.
@@ -229,8 +237,31 @@ All links and navigation work correctly
 
 Accessibility checks for screen readers, contrast and navigation.
 
+### Links
+Check all links work and open new tab if required.
+Home 2 Internal 1 External Links OK
+Projects 12 Internal 7 External Links OK
+Contact 2 Internal 1 External OK
+
+### Contact Page
+Confirm that the page functions as expected and email is received - OK
+
+
 ### Bugs discovered
 
+Link to article not working caused by a missing # symbol.
+```css
+  <li><a href="mqtt">MQTT ESP 32</a> - Improving sensor communication.</li>
+  <li><a href="#this-website">This Website</a> - Overview of the tools used to create this site.
+```
+Replaced with :
+```css
+  <li><a href="#mqtt">MQTT ESP 32</a> - Improving sensor communication.</li>
+  <li><a href="#this-website">This Website</a> - Overview of the tools used to create this site.
+```
+
+Order of links on Projects page was wrong, reorganised.
+Link to Espressive site not opening in new tab, added _blank to target.
 
 # Project Requirements Check From CI Project Brief
 

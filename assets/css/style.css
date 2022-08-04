@@ -1,16 +1,20 @@
 :root {
---my-primary-col : #a12aa3;
---my-secondary-col: #a32a68;
---my-tertiary-col: #642aa3;
---bs-navbar-padding-x: 0;
---bs-navbar-padding-y: 0.5rem;
+    --my-primary-col: #a12aa3;
+    --my-secondary-col: #a32a68;
+    --my-tertiary-col: #642aa3;
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
 }
 
 .navbar a {
     color: var(--my-primary-col);
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: var(--my-primary-col);
 }
 
@@ -20,16 +24,17 @@ a {
 }
 
 a:hover {
-    color: var(--my-secondary-col)
+    color: var(--my-secondary-col);
 }
 
 .nav {
     --bs-nav-link-hover-color: var(--my-secondary-col);
 }
+
 .nav-pills {
-	--bs-nav-pills-border-radius: 0.375rem;
-	--bs-nav-pills-link-active-color: #fff;
-	--bs-nav-pills-link-active-bg: var(--my-primary-col);
+    --bs-nav-pills-border-radius: 0.375rem;
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: var(--my-primary-col);
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
 
@@ -39,17 +44,16 @@ a:hover {
     color: var(--my-primary-col);
 }
 
-.progress-lables{
+.progress-lables {
     padding-top: 5px;
     margin-bottom: 0%;
 }
-
 
 .my-box {
     border-radius: 0.5rem;
     box-shadow: 2px 2px 8px var(--my-primary-col);
     border-color: black;
-    border-style:hidden;
+    border-style: hidden;
     margin-bottom: 2rem;
 }
 
@@ -65,6 +69,7 @@ a:hover {
 #portrait {
     border-radius: 50%;
 }
+
 .progress-bar {
     background-color: var(--my-primary-col);
 }
@@ -77,7 +82,6 @@ a:hover {
     border-width: 1px;
     border-style: solid;
     margin-bottom: 1rem;
-    
 }
 
 .my-anchor-link {
@@ -88,10 +92,11 @@ a:hover {
 pre code {
     background-color: black;
     border-radius: 0.5rem;
-    color: azure ;
-    display: inline-block ;
+    color: azure;
+    display: inline-block;
     padding: 1rem;
 }
+
 .footer {
     background-color: var(--my-primary-col);
     padding: 1rem;
@@ -107,4 +112,6 @@ footer p {
     text-decoration: none;
 }
 
-
+.g-recaptcha {
+    margin-bottom: 1rem;
+}
