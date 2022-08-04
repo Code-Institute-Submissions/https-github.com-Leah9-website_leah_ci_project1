@@ -2,6 +2,8 @@
 --my-primary-col : #a12aa3;
 --my-secondary-col: #a32a68;
 --my-tertiary-col: #642aa3;
+--bs-navbar-padding-x: 0;
+--bs-navbar-padding-y: 0.5rem;
 }
 
 .navbar a {
@@ -28,7 +30,7 @@ a:hover {
 	--bs-nav-pills-border-radius: 0.375rem;
 	--bs-nav-pills-link-active-color: #fff;
 	--bs-nav-pills-link-active-bg: var(--my-primary-col);
-    
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
 
 #name-cursive {

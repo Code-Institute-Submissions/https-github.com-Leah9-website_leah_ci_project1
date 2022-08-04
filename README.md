@@ -74,6 +74,8 @@ I have created wireframe views of the three pages that the site will have based 
 
 ### My Styles and Bootstrap Overrides
 
+All my style rules are contained in the style.css file.
+
 #### Navbar overrides to replace Bootstrap defaults
 ``` css
 
@@ -89,7 +91,7 @@ I have created wireframe views of the three pages that the site will have based 
 	--bs-nav-pills-link-active-bg: rgb(162, 42, 164);
 }
 ```
-All my style rules are contained in the style.css file.
+
 
 ## Credits
 All images are my own.
