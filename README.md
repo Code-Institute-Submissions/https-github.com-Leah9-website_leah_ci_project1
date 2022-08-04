@@ -3,8 +3,11 @@
 
 ## UX
 ### Project Goal
-The primary goad is to create a website to display my abilities and strengths to a prospective employer, get hired.
+The primary goad is to create a website to display my abilities and strengths to a prospective employer and get hired in a software development role.
 
+#### Tagret Audience
+
+* Employers in South Wales
 
 #### User goals
 * To find out what skills I have
@@ -94,7 +97,7 @@ All my style rules are contained in the style.css file.
 
 
 ## Credits
-All images are my own.
+All images and content are my own.
 Music in the YouTube video is supplied as part of the user agreement to improve UX.
 
 ### Acknoledgements - Attribution
@@ -144,13 +147,16 @@ jobs:
 ### How to run this project locally
 
 * Set up a web host environment using LAMP / WAMP
-* Copy all project files and folders into a virtual host location
+* Github repo https://github.com/Leah9/website_leah_ci_project1
+* Copy or clone all project files and folders into a virtual host location.
 * Enter the virtual host address in a web browser.
 * reCAPTCH will not work locally as it is associated with the domain name. 
 
 ## Testing
 
-The first stage is checking that the site displays as expected on mobile, tablet and laptop / desktop sized screens. To do this i have used Google Chrome and lighthouse as shown below.
+The first stage is checking that the site displays as expected on mobile, tablet and laptop / desktop sized screens.
+To do this I have used Google Chrome and lighthouse as shown below.
+I have done this for all pages but only showing the home page here.
 
 https://developer.chrome.com/docs/lighthouse/overview/
 
@@ -160,7 +166,7 @@ Mobile:
 ![Mobile test with scores](/assets/images/Lighthouse-mobile.JPG "Mobile test with scores")
 
 
-Tablet:
+Tablet, this is slightly different to the wireframe as it did not look quite as good with the image on its own row.
 
 
 ![Tablet view](/assets/images/lighthouse-tablet.JPG "Tablet view")
@@ -261,6 +267,7 @@ Replaced with :
 ```
 
 Order of links on Projects page was wrong, reorganised.
+
 Link to Espressive site not opening in new tab, added _blank to target.
 
 # Project Requirements Check From CI Project Brief
